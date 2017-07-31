@@ -1,0 +1,81 @@
+@import "mixins";
+
+$list: 'ul li';
+
+.logo {
+  float: left;
+  margin: 10px 20px 0 0;
+  height: 135px;
+  width: 171px;
+}
+
+.header-content {
+  float: left;
+  width: 1009px;
+
+  .contact {
+    @include border-radius(0 0 0 10px);
+    background-color: #ebebeb;
+    color: $fontPrimary;
+    font-size: 0.8em;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+
+    .phone {
+      float: left;
+      padding-left: 15px;
+    }
+
+    .suport {
+      float: right;
+    }
+  }
+
+  .search-bar {
+    position: relative;
+
+    .search {
+      @include border-radius(20px);
+      border: 1px solid #cccccc;
+      float: left;
+      font-size: 0.9em;
+      height: 36px;
+      margin: 10px 0;
+      padding-left: 20px;
+      width: 590px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 20px;
+      left: 580px;
+    }
+  }
+
+  .client-menu #{$list}, .categories #{$list}, .subcategories #{$list}, .source #{$list} {
+    @include list_inline;
+  }
+
+  .client-menu {
+    margin-top: 10px;
+
+    #{$list} {
+      position: relative;
+      width: 120px;
+      font-size: 0.8em;
+      text-transform: uppercase;
+    }
+
+    .icon {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+  }
+
+}

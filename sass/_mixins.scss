@@ -1,0 +1,19 @@
+$fontPrimary: #282828;
+$fontSecondary: #818181;
+
+@mixin list_inline {
+  display: inline-block;
+}
+
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1300px;
+}
