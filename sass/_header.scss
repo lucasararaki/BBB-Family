@@ -15,6 +15,7 @@ $list: 'ul li';
   position: relative;
   box-sizing: border-box;
 
+  // barra de contato cinza
   .contact {
     @include border-radius(0 0 0 10px);
     background-color: #ebebeb;
@@ -34,6 +35,7 @@ $list: 'ul li';
     }
   }
 
+  // barra de pesquisa
   .search-bar {
     position: relative;
 
@@ -59,10 +61,12 @@ $list: 'ul li';
     }
   }
 
+  // deixando os menus todos em inline
   .client-menu #{$list}, .categories #{$list}, .subcategories #{$list}, .source #{$list} {
     @include list_inline;
   }
 
+  // menu do cliente
   .client-menu {
     margin: 10px 0 0 10px;
     position: absolute;
@@ -73,6 +77,7 @@ $list: 'ul li';
       font-size: 0.8em;
       text-transform: uppercase;
 
+      // alinhamento das imagens dos icones
       .menu-icon {
         position: relative;
         float: left;
@@ -84,6 +89,7 @@ $list: 'ul li';
         }
       }
 
+      // alinhamento do texto das opções
       .menu-txt {
         display: flex;
         float: left;
@@ -95,11 +101,67 @@ $list: 'ul li';
         line-height: 1.3;
       }
     }
-
   }
 
+  // menu de categorias
   .categories {
     clear: both;
+
+    #{$list} {
+      @include border-radius(14px);
+      background-color: #ebebeb;
+      color: $fontSecondary;
+      font-size: 0.866em;
+      height: 29px;
+      line-height: 29px;
+      margin-bottom: 7px;
+      text-align: center;
+      width: 122px;
+
+      &:first-child {
+        @include border-radius(14px 14px 0 0);
+        background: #ffd000 url('../img/icons/nav_focus.png') no-repeat;
+        color: $fontPrimary;
+        height: 36px;
+        margin-bottom: 0;
+      }
+    }
   }
 
+  // subcategorias
+  .subcategories {
+    background-color: #ffd000;
+    font-size: 0.866em;
+    height: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+
+    #{$list} {
+      box-sizing: border-box;
+      padding: 0 15px;
+
+      &:first-child {
+        padding-left: 30px;
+      }
+    }
+  }
+
+}
+
+// caminho da navegação
+.source {
+  clear: both;
+  color: $fontSecondary;
+  font-size: 0.688em;
+  padding-top: 15px;
+  text-transform: uppercase;
+
+  #{$list} {
+    display: inline-block;
+    padding: 0 5px;
+
+    &:last-child {
+      font-weight: bold;
+    }
+  }
 }
