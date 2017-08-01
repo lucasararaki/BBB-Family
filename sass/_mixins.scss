@@ -1,5 +1,6 @@
 $fontPrimary: #282828;
 $fontSecondary: #818181;
+$list: 'ul li';
 
 @mixin list_inline {
   display: inline-block;
@@ -16,4 +17,38 @@ $fontSecondary: #818181;
   box-sizing: border-box;
   margin: 0 auto;
   width: 1300px;
+}
+
+.side_menu {
+  @include border-radius(12px);
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 10px;
+  width: 257px;
+
+  .yellow-bar {
+    background-color: #fce376;
+    height: 7px;
+  }
+
+  .filter-title {
+    background-color: rgba(235, 235, 235, 0.45);
+    color: #4d4d4d;
+    font-size: 1.375em;
+    height: 46px;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding: 15px 0;
+  }
+
+  #{$list} {
+    color: #727272;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2.438;
+  }
 }

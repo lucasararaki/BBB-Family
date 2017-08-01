@@ -1,7 +1,5 @@
 @import "mixins";
 
-$list: 'ul li';
-
 .logo {
   float: left;
   margin: 10px 20px 0 0;
@@ -39,7 +37,7 @@ $list: 'ul li';
   .search-bar {
     position: relative;
 
-    .search {
+    .search-input {
       @include border-radius(20px);
       border: 1px solid #cccccc;
       float: left;
@@ -82,11 +80,11 @@ $list: 'ul li';
         position: relative;
         float: left;
 
-        .icon {
-          position: absolute;
-          left: 10px;
-          top: 10px;
-        }
+        // .icon {
+        //   position: absolute;
+        //   left: 10px;
+        //   top: 10px;
+        // }
       }
 
       // alinhamento do texto das opções
@@ -120,7 +118,7 @@ $list: 'ul li';
 
       &:first-child {
         @include border-radius(14px 14px 0 0);
-        background: #ffd000 url('../img/icons/nav_focus.png') no-repeat;
+        background-color: #ffd000;
         color: $fontPrimary;
         height: 36px;
         margin-bottom: 0;
@@ -131,6 +129,7 @@ $list: 'ul li';
   // subcategorias
   .subcategories {
     background-color: #ffd000;
+    color: $fontPrimary;
     font-size: 0.866em;
     height: 32px;
     line-height: 32px;
@@ -144,6 +143,10 @@ $list: 'ul li';
         padding-left: 30px;
       }
     }
+
+    .dot {
+      font-size: 2em;
+    }
   }
 
 }
@@ -153,7 +156,7 @@ $list: 'ul li';
   clear: both;
   color: $fontSecondary;
   font-size: 0.688em;
-  padding-top: 15px;
+  padding: 15px 0 10px 0;
   text-transform: uppercase;
 
   #{$list} {
