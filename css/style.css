@@ -49,7 +49,9 @@ table {
 
 .header-content {
   float: left;
-  width: 1009px; }
+  width: 1009px;
+  position: relative;
+  box-sizing: border-box; }
   .header-content .contact {
     -webkit-border-radius: 0 0 0 10px;
     -moz-border-radius: 0 0 0 10px;
@@ -63,7 +65,7 @@ table {
     width: 100%; }
     .header-content .contact .phone {
       float: left;
-      padding-left: 15px; }
+      padding-left: 10px; }
     .header-content .contact .suport {
       float: right; }
   .header-content .search-bar {
@@ -79,25 +81,40 @@ table {
       height: 36px;
       margin: 10px 0;
       padding-left: 20px;
-      width: 590px; }
+      width: 580px; }
       .header-content .search-bar .search:focus {
         outline: none; }
     .header-content .search-bar img {
       position: absolute;
       top: 20px;
-      left: 580px; }
+      left: 570px; }
   .header-content .client-menu ul li, .header-content .categories ul li, .header-content .subcategories ul li, .header-content .source ul li {
     display: inline-block; }
   .header-content .client-menu {
-    margin-top: 10px; }
+    margin: 10px 0 0 10px;
+    position: absolute;
+    right: 0; }
     .header-content .client-menu ul li {
-      position: relative;
       width: 120px;
       font-size: 0.8em;
       text-transform: uppercase; }
-    .header-content .client-menu .icon {
-      position: absolute;
-      left: 10px;
-      top: 10px; }
+      .header-content .client-menu ul li .menu-icon {
+        position: relative;
+        float: left; }
+        .header-content .client-menu ul li .menu-icon .icon {
+          position: absolute;
+          left: 10px;
+          top: 10px; }
+      .header-content .client-menu ul li .menu-txt {
+        display: flex;
+        float: left;
+        height: 45px;
+        align-items: center;
+        width: 76px;
+        padding-left: 5px;
+        box-sizing: border-box;
+        line-height: 1.3; }
+  .header-content .categories {
+    clear: both; }
 
 /*# sourceMappingURL=style.css.map */

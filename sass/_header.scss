@@ -12,6 +12,8 @@ $list: 'ul li';
 .header-content {
   float: left;
   width: 1009px;
+  position: relative;
+  box-sizing: border-box;
 
   .contact {
     @include border-radius(0 0 0 10px);
@@ -24,7 +26,7 @@ $list: 'ul li';
 
     .phone {
       float: left;
-      padding-left: 15px;
+      padding-left: 10px;
     }
 
     .suport {
@@ -43,7 +45,7 @@ $list: 'ul li';
       height: 36px;
       margin: 10px 0;
       padding-left: 20px;
-      width: 590px;
+      width: 580px;
 
       &:focus {
         outline: none;
@@ -53,7 +55,7 @@ $list: 'ul li';
     img {
       position: absolute;
       top: 20px;
-      left: 580px;
+      left: 570px;
     }
   }
 
@@ -62,20 +64,42 @@ $list: 'ul li';
   }
 
   .client-menu {
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
+    position: absolute;
+    right: 0;
 
     #{$list} {
-      position: relative;
       width: 120px;
       font-size: 0.8em;
       text-transform: uppercase;
+
+      .menu-icon {
+        position: relative;
+        float: left;
+
+        .icon {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+        }
+      }
+
+      .menu-txt {
+        display: flex;
+        float: left;
+        height: 45px;
+        align-items: center;
+        width: 76px;
+        padding-left: 5px;
+        box-sizing: border-box;
+        line-height: 1.3;
+      }
     }
 
-    .icon {
-      position: absolute;
-      left: 10px;
-      top: 10px;
-    }
+  }
+
+  .categories {
+    clear: both;
   }
 
 }
