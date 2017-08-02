@@ -22,9 +22,9 @@ $list: 'ul li';
 .side_menu {
   @include border-radius(12px);
   border: 1px solid #e1e1e1;
+  margin-bottom: 30px;
   overflow: hidden;
   text-align: center;
-  margin-top: 10px;
   width: 257px;
 
   .yellow-bar {
