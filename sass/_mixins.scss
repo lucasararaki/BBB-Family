@@ -2,8 +2,18 @@ $fontPrimary: #282828;
 $fontSecondary: #818181;
 $list: 'ul li';
 
-@mixin list_inline {
-  display: inline-block;
+// ======= Default =======
+.container {
+  font-family: 'Roboto';
+  margin: 0 auto;
+  width: 1209px;
+}
+// ======= Mixins =======
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content};
+       &:-ms-input-placeholder {@content};
+           &::-moz-placeholder {@content};
+            &:-moz-placeholder {@content};
 }
 
 @mixin border-radius($radius...) {
@@ -13,12 +23,8 @@ $list: 'ul li';
           border-radius: $radius;
 }
 
-.container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 1300px;
-}
 
+// ======= Templates =======
 .side_menu {
   @include border-radius(12px);
   border: 1px solid #e1e1e1;

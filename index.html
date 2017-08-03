@@ -10,10 +10,9 @@
 </head>
 
 <body>
-  <!-- como aplicar uma classe container?  -->
+
   <header class="container">
     <!-- logo do header -->
-    <!-- ** html semantico, tirar div. usar figure -->
     <div class="logo">
       <img src="img/logo/logo_large.png" alt="BBB Family">
     </div>
@@ -28,16 +27,14 @@
       <!-- barra de pesquisa -->
       <div class="search-bar">
         <input class="search-input" type="text" placeholder="Digite aqui o que você procura...">
-        <img src="img/icons/search-icon.png" alt="Buscar">
+        <img class="search-icon" src="img/icons/search-icon.png" alt="Buscar">
       </div>
 
       <!-- acesso as opções do cliente -->
-      <!-- ** verificar necessidade de utilizar NAV -->
-      <div class="client-menu">
+      <nav class="client-menu">
         <ul>
           <li>
             <div class="menu-icon">
-              <!-- <img src="img/icons/elipse.png" alt="Login" class="circle"> -->
               <img src="img/icons/login1.png" alt="Login" class="icon">
             </div>
             <div class="menu-txt">
@@ -47,7 +44,6 @@
 
           <li>
             <div class="menu-icon">
-              <!-- <img src="img/icons/elipse.png" alt="Meus pedidos" class="circle"> -->
               <img src="img/icons/order1.png" alt="Meus pedidos" class="icon">
             </div>
             <div class="menu-txt">
@@ -57,7 +53,6 @@
 
           <li>
             <div class="menu-icon">
-              <!-- <img src="img/icons/elipse.png" alt="Carrinho" class="circle"> -->
               <img src="img/icons/cart1.png" alt="Carrinho" class="icon">
             </div>
             <div class="menu-txt">
@@ -65,27 +60,25 @@
             </div>
           </li>
         </ul>
-      </div>
+      </nav>
 
       <!-- menu de categorias -->
-      <!-- ** verificar necessidade de usar NAV -->
       <nav class="categories">
         <ul>
           <li>
-            <p>Bebê e infantil</p>
+            <a href="#">Bebê e infantil</a>
           </li>
           <li>
-            <p>Juvenil</p>
+            <a href="#">Juvenil</a>
           </li>
           <li>
-            <p>Adulto</p>
+            <a href="#">Adulto</a>
           </li>
         </ul>
       </nav>
 
       <!-- subcategorias -->
-      <!-- ** verificar necessidade de usar NAV -->
-      <div class="subcategories">
+      <nav class="subcategories">
         <ul>
           <li>Roupas</li>
           <!-- trocar por um elemento diferente  -->
@@ -101,7 +94,7 @@
           <li class="dot">.</li>
           <li>Passeio</li>
         </ul>
-      </div>
+        </div>
     </section>
 
     <!-- caminho atual do acesso -->
@@ -126,7 +119,7 @@
   </section>
 
   <!-- parte principal do site -->
-  <section class="core">
+  <section class="core container">
     <h1>Nome do departamento</h1>
 
     <!-- filtros na lateral esquerda -->
@@ -138,7 +131,7 @@
         <div class="filter-title">
           Categorias
         </div>
-        <div class="filter-body">
+        <nav class="filter-body">
           <ul>
             <li><a href="">Categoria Lorem (2)</a></li>
             <li><a href="">Categoria Lorem (2)</a></li>
@@ -149,47 +142,111 @@
             <li><a href="">Categoria Lorem (2)</a></li>
             <li><a href="">Categoria Lorem (2)</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
 
       <!-- filtros -->
       <div class="filter">
-          <div class="yellow-bar"></div>
+        <div class="yellow-bar"></div>
         <div class="filter-title">
           Filtros
         </div>
-        <div class="filter-body">
+        <nav class="filter-body">
           <ul>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
+            <li>
+              <input type="checkbox" name="checkbox1">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox2" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox3">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox4">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox5">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox6" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox7" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox8">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
 
       <!-- filtros -->
       <div class="filter">
-          <div class="yellow-bar"></div>
+        <div class="yellow-bar"></div>
         <div class="filter-title">
           Filtros
         </div>
-        <div class="filter-body">
+        <nav class="filter-body">
           <ul>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox" checked>Filtro Lorem (2)</input></li>
-            <li><input type="checkbox">Filtro Lorem (2)</input></li>
+            <li>
+              <input type="checkbox" name="checkbox1">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox2" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox3">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox4">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox5">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox6" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox7" checked>
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox8">
+                <label for="checkbox">Filtro Lorem (2)</label>
+              </input>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
 
     </section>
@@ -197,7 +254,7 @@
     <!-- vitrine dos produtos -->
     <section class="products-grid">
       <div class="order-filter">
-        Ordenar por:
+        Ordenar por
         <select name="" id="">
           <option value="" selected>Relevância</option>
           <option value="">Mais acessados</option>
@@ -306,22 +363,104 @@
 
       <!-- paginação -->
       <nav class="pagination">
-        <a href=""><<</a>
-        <a href="">Anterior</a>
-        <a href="">1</a>
-        <a class="selected" href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">5</a>
-        <a href="">...</a>
-        <a href="">13</a>
-        <a href="">Próxima</a>
-        <a href="">>></a>
+        <a href="">
+          <<</a>
+            <a href="">Anterior</a>
+            <a href="">1</a>
+            <a class="selected" href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">...</a>
+            <a href="">13</a>
+            <a href="">Próxima</a>
+            <a href="">>></a>
       </nav>
 
     </section>
+
+    <div class="divider-lg"></div>
   </section>
 
+  <footer class="container">
+
+    <section class="infos">
+
+      <div class="info">
+        <div class="info-title">
+          <img src="../img/icons/about-icon.png"> Institucional
+        </div>
+        <div class="info-content">
+          <p>Quem Somos</p>
+          <p>Nossas Lojas</p>
+          <p>Trabalhe Conosco</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="info-title">
+          <img src="../img/icons/info-icon.png"> Informações
+        </div>
+        <div class="info-content">
+          <p>Política de Entregas</p>
+          <p>Política de Trocas e Devoluções</p>
+          <p>Dúvidas Frequentes</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="info-title">
+          <img src="../img/icons/contact-icon.png"> Atendimento
+        </div>
+        <div class="info-content">
+          <p>Televendas: (11) 3228-0500</p>
+          <p>E-mail: contato@dominio.com.br</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- links das redes sociais -->
+    <section class="social-medias">
+      <p>Redes Sociais</p>
+      <ul>
+        <li><img src="../img/social_media/facebook.png" alt="Facebook"></li>
+        <li><img src="../img/social_media/youtube.png" alt="YouTube"></li>
+        <li><img src="../img/social_media/twitter.png" alt="Twitter"></li>
+        <li><img src="../img/social_media/instagram.png" alt="Instagram"></li>
+      </ul>
+    </section>
+
+    <!-- seção com logos e descrição sobre a empresa -->
+    <section class="description">
+      <img src="../img/logo/logo_small.png" alt="BBB Family">
+      <img src="../img/logo/bbb_logo.png" alt="BBB Family">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti blanditiis placeat dolores, consectetur odit, accusantium, tempore omnis voluptates accusamus facere excepturi. Asperiores quas quos, consectetur distinctio rem aut sint delectus debitis
+        enim tempora maxime facilis quisquam nihil veniam veritatis, aliquam itaque aspernatur aperiam dicta neque sunt dolor maiores. Sunt assumenda cum consectetur ullam dicta facere et explicabo sint dignissimos vero.
+      </p>
+    </section>
+
+    <!-- selos de segurança, pagamento e plataforma -->
+    <section class="stamps">
+      <div class="group1">
+        <img class="ssl" src="../img/logo/security.png" alt="">
+        <img class="ebit" src="../img/logo/ebit.png" alt="">
+      </div>
+      <div class="cards">
+        <img src="../img/logo/payment.png" alt="">
+      </div>
+      <div class="group2">
+        <img class="vtex" src="../img/logo/vtex.png" alt="">
+        <img class="sanders" src="../img/logo/sanders_logo.png" alt="">
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>BBB Family © 2017 - Todos os direitos reservados.</p>
+      <p>Razão Social - CNPJ: 000 0000 00 0000 0001 000</p>
+    </div>
+
+  </footer>
 
 </body>
 

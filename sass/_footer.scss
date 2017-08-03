@@ -1,0 +1,109 @@
+@import "mixins";
+
+footer {
+  clear: both;
+  color: #5b5b5b;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding-top: 30px;
+
+  .info {
+    float: left;
+    margin-right: 25px;
+    width: 220px;
+
+    .info-title {
+      text-transform: uppercase;
+      height: 17px;
+
+      img {
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    .info-content {
+      padding-top: 30px;
+      line-height: 1.5;
+    }
+  }
+
+  .social-medias {
+    float: right;
+
+    p {
+      text-transform: uppercase;
+    }
+
+    #{$list} {
+      display: inline-block;
+      margin: 10px 5px;
+    }
+  }
+
+  .description {
+    clear: both;
+    padding-top: 30px;
+
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    p {
+      float: left;
+      width: 60%;
+      line-height: 1.2;
+    }
+  }
+
+  .stamps {
+    clear: both;
+    padding: 50px 0 20px 0;
+
+    .group1, .cards, .group2 {
+      display: inline-block;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .group1 {
+      float: left;
+
+      .ssl {
+        margin-right: 30px;
+      }
+    }
+
+    .cards {
+      text-align: center;
+      width: 652px;
+      text-align: center;
+    }
+
+    .group2 {
+      float: right;
+
+      img {
+        margin: 15px;
+      }
+    }
+
+  }
+
+  .copyright {
+    border-top: 1px solid  #d7d7d7;
+    font-size: 0.875em;
+    font-weight: 400;
+    padding-top: 10px;
+
+    p:first-child {
+      float: left;
+      display: block;
+    }
+
+    p:last-child {
+      display: block;
+      float: right;
+    }
+  }
+}
