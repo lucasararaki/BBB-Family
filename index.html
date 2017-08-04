@@ -25,9 +25,43 @@
       </div>
 
       <!-- barra de pesquisa -->
-      <div class="search-bar">
+      <div class="search-bar" id="search">
         <input class="search-input" type="text" placeholder="Digite aqui o que você procura...">
         <img class="search-icon" src="img/icons/search-icon.png" alt="Buscar">
+
+        <div class="search-hover" id="search-suggestion">
+          <div class="search-history">
+            <ul>
+              <li>
+                <img src="../img/icons/search_gray.png">
+                <p>Produto lorem ipsum</p>
+              </li>
+              <li>
+                <img src="../img/icons/search_gray.png">
+                <p>Produto dolor sit amet</p>
+              </li>
+            </ul>
+          </div>
+          <div class="search-items">
+            <ul>
+              <li>
+                <img src="../img/products/triciclo.png" alt="">
+                <div class="search-item-name">Produto lorem ipsum dolor sit</div>
+                <div class="search-item-price">R$ 199,90</div>
+              </li>
+              <li>
+                <img src="../img/products/roupa_bebe.png" alt="">
+                <div class="search-item-name">Produto lorem ipsum dolor sit</div>
+                <div class="search-item-price">R$ 199,90</div>
+              </li>
+              <li>
+                <img src="../img/products/cadeira.png" alt="">
+                <div class="search-item-name">Produto lorem ipsum dolor sit</div>
+                <div class="search-item-price">R$ 199,90</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- acesso as opções do cliente -->
@@ -51,7 +85,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="cart-option">
             <div class="menu-icon">
               <img src="img/icons/cart1.png" alt="Carrinho" class="icon">
             </div>
@@ -116,22 +150,179 @@
       <!-- subcategorias -->
       <nav class="subcategories">
         <ul>
-          <li>Roupas</li>
+          <li class="cat-opc">Roupas</li>
           <!-- trocar por um elemento diferente  -->
-          <li class="dot">.</li>
-          <li>Calçados</li>
+          <li>.</li>
+          <li class="cat-opc">Calçados</li>
           <!-- trocar por um elemento diferente  -->
-          <li class="dot">.</li>
-          <li>Enxoval e alimentação</li>
+          <li>.</li>
+          <li class="cat-opc">Enxoval e alimentação</li>
           <!-- trocar por um elemento diferente  -->
-          <li class="dot">.</li>
-          <li>Quarto e Banho</li>
+          <li>.</li>
+          <li class="cat-opc">Quarto e Banho</li>
           <!-- trocar por um elemento diferente  -->
-          <li class="dot">.</li>
-          <li>Passeio</li>
+          <li>.</li>
+          <li class="cat-opc">Passeio</li>
         </ul>
-        </div>
+      </nav>
     </section>
+
+    <!-- hover na categoria -->
+    <div class="category-hover ">
+      <div class="colum">
+        <div class="cat">
+          <div class="category-title">
+            Conjuntos
+          </div>
+          <div class="subcat">
+            <a href="">Conjuntos Curtos</a>
+            <a href="">Conjuntos Longos</a>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Blusinhas e camisetas
+          </div>
+          <div class="subcat">
+            <a href="">Manga Curta</a>
+            <a href="">Manga Longa</a>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Vestidos e macaquinhos
+          </div>
+          <div class="subcat">
+            <a href="">Manga Curta</a>
+            <a href="">Manga Longa</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="colum">
+
+        <div class="cat">
+          <div class="category-title">
+            Saias
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Blusas e casacos
+          </div>
+          <div class="subcat">
+            <a href="">Moletom Fechado</a>
+            <a href="">Jaquetas</a>
+            <a href="">Cardigans e Sueters</a>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Bermudas e Shorts
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Macacao
+          </div>
+          <div class="subcat">
+            <a href="">Macacão Curto</a>
+            <a href="">Macacão Longo</a>
+            <a href="">Jardineiras</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="colum">
+        <div class="cat">
+          <div class="category-title">
+            Bodies
+          </div>
+          <div class="subcat">
+            <a href="">Manga Curta</a>
+            <a href="">Manga Longa</a>
+            <a href="">Regata</a>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Culotes e tapa fralda
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Saídas de maternidade
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Moda praia sungas biquínis e maios
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="colum">
+        <div class="cat">
+          <div class="category-title">
+            Pijamas
+          </div>
+          <div class="subcat">
+            <a href="">Manga Curta</a>
+            <a href="">Manga Longa</a>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Underwear
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category-title">
+            Acessórios
+          </div>
+          <div class="subcat">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="colum">
+        <div class="cat-item">
+          <img src="../img/products/calca.png" alt="">
+          <p>Nome do produto exibido na vitrine</p>
+          <p class="old-price">De: R$ 100,00</p>
+          <p class="new-price">Por: R$ 80,00</p>
+        </div>
+      </div>
+    </div>
 
     <!-- caminho atual do acesso -->
     <div class="source">
@@ -531,6 +722,9 @@
     </div>
 
   </footer>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
 
 </body>
 

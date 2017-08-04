@@ -87,30 +87,12 @@
     }
 
     .item {
-      color: #5f5f5f;
-      font-size: 0.938em;
-      font-weight: 400;
-      line-height: 1.2;
-      letter-spacing: 1px;
+      @extend .product ;
       padding: 0 30px 60px;
-      text-transform: uppercase;
       width: 250px;
 
       img {
-        text-align: center;
         width: 250px;
-      }
-
-      .old-price {
-        text-decoration: line-through;
-      }
-
-      .new-price {
-        color: #45a393;
-        font-size: 1.563em;
-        font-weight: 700;
-        letter-spacing: 2px;
-        margin-top: 5px;
       }
     }
 

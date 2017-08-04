@@ -58,3 +58,30 @@ $list: 'ul li';
     line-height: 2.438;
   }
 }
+
+
+// produto
+.product {
+  color: #5f5f5f;
+  font-size: 0.938em;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  img {
+    text-align: center;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+  }
+
+  .new-price {
+    color: #45a393;
+    font-size: 1.563em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px;
+  }
+}
