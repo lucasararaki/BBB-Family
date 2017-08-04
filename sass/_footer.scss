@@ -13,8 +13,8 @@ footer {
     width: 220px;
 
     .info-title {
-      text-transform: uppercase;
       height: 17px;
+      text-transform: uppercase;
 
       img {
         position: relative;
@@ -23,8 +23,8 @@ footer {
     }
 
     .info-content {
-      padding-top: 30px;
       line-height: 1.5;
+      padding-top: 30px;
     }
   }
 
@@ -51,8 +51,8 @@ footer {
     }
     p {
       float: left;
-      width: 60%;
       line-height: 1.2;
+      width: 60%;
     }
   }
 
@@ -76,8 +76,8 @@ footer {
 
     .cards {
       text-align: center;
-      width: 652px;
       text-align: center;
+      width: 652px;
     }
 
     .group2 {
@@ -94,11 +94,12 @@ footer {
     border-top: 1px solid  #d7d7d7;
     font-size: 0.875em;
     font-weight: 400;
+    margin-bottom: 30px;
     padding-top: 10px;
 
     p:first-child {
-      float: left;
       display: block;
+      float: left;
     }
 
     p:last-child {

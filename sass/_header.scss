@@ -1,5 +1,5 @@
 @import "mixins";
-@import "content";
+@import "content"; // extend na classe item
 
 .logo {
   float: left;
@@ -165,6 +165,7 @@
 
         .search-item-price {
           padding-left: 10px;
+          font-weight: 700;
         }
       }
     }
@@ -212,6 +213,7 @@
       background-color: #ebebeb;
       color: $fontSecondary;
       font-size: 0.866em;
+      font-weight: 300;
       height: 29px;
       line-height: 29px;
       margin-bottom: 7px;
@@ -236,6 +238,7 @@
     background-color: #ffd000;
     color: $fontPrimary;
     font-size: 1em;
+    font-weight: 300;
     height: 32px;
     text-transform: uppercase;
 
@@ -264,6 +267,7 @@
   padding: 40px 0 40px;
   position: absolute;
   top: 146px;
+  transition-delay: 1s;
   z-index: 1;
 
   .colum {
@@ -284,6 +288,7 @@
 
       .subcat {
         padding: 5px 0 0 20px;
+        font-weight: 300;
 
         a {
           height: 25px;
@@ -307,7 +312,6 @@
       text-align: center;
     }
   }
-
 }
 
 // caminho da navegação
@@ -330,12 +334,12 @@
 }
 
 .cart-hover {
-  display: none;
   @include border-radius(3px);
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   color: #5c5c5c;
-  font-family: 'Source Sans Pro', 'Open Sans';
+  display: none;
+  font-family: 'Open Sans';
   font-weight: bold;
   height: 272px;
   line-height: 1.2;
@@ -381,6 +385,7 @@
       display: flex;
       float: left;
       font-size: 0.874em;
+      font-weight: 700;
       height: 50px;
       padding-left: 10px;
     }
@@ -388,6 +393,7 @@
 
   .cart-footer {
     padding: 5px 10px;
+    font-weight: 700;
 
     .cart-price {
       color: #474747;
@@ -400,6 +406,7 @@
       @include border-radius(16px);
       background-color: #78cecd;
       color: #fff;
+      cursor: pointer;
       display: block;
       float: right;
       font-size: 0.875em;

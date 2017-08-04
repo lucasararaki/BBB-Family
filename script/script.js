@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var click = false;
+
   // campo de buscas
   $(".search-input").on('focus', function() {
     $("#search").toggleClass("search-active");
@@ -10,11 +12,15 @@ $(document).ready(function() {
   });
 
   // hover no carrinho
-  $('.cart-option').hover(function() {
-    $('.cart-hover').css({'display': 'block'});
-  },
-  function() {
-    $('.cart-hover').css({'display': 'none'});
+  $('.cart-option').click(function() {
+
+    if(!click) {
+      $('.cart-hover').css({'display': 'block'});
+      click = true;
+    } else {
+      $('.cart-hover').css({'display': 'none'});
+      click = false;
+    }
   });
 
   // hover subcategorias
@@ -23,7 +29,9 @@ $(document).ready(function() {
     $('.category-hover').css('display', 'block');
   },
   function() {
-    $(this).removeClass('category-selected');
-    $('.category-hover').css('display', 'none');
+    setTimeout(function() {
+      $('.subcategories ul .cat-opc').removeClass('category-selected');
+      $('.category-hover').css('display', 'none');
+    }, 1000);
   });
 });

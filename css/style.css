@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,700");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -381,7 +382,8 @@ table {
           padding-left: 20px;
           width: 500px; }
         .header-content .search-active .search-items ul li .search-item-price {
-          padding-left: 10px; }
+          padding-left: 10px;
+          font-weight: 700; }
   .header-content .categories ul li,
   .header-content .client-menu ul li,
   .header-content .source ul li,
@@ -416,6 +418,7 @@ table {
       background-color: #ebebeb;
       color: #818181;
       font-size: 0.866em;
+      font-weight: 300;
       height: 29px;
       line-height: 29px;
       margin-bottom: 7px;
@@ -436,6 +439,7 @@ table {
     background-color: #ffd000;
     color: #282828;
     font-size: 1em;
+    font-weight: 300;
     height: 32px;
     text-transform: uppercase; }
     .header-content .subcategories ul li {
@@ -456,6 +460,7 @@ table {
   padding: 40px 0 40px;
   position: absolute;
   top: 146px;
+  transition-delay: 1s;
   z-index: 1; }
   .category-hover .colum {
     border-right: 1px solid #c2c2c2;
@@ -470,7 +475,8 @@ table {
         text-transform: uppercase;
         font-weight: bold; }
       .category-hover .colum .cat .subcat {
-        padding: 5px 0 0 20px; }
+        padding: 5px 0 0 20px;
+        font-weight: 300; }
         .category-hover .colum .cat .subcat a {
           height: 25px;
           line-height: 25px;
@@ -497,7 +503,6 @@ table {
       font-weight: bold; }
 
 .cart-hover {
-  display: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -505,7 +510,8 @@ table {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   color: #5c5c5c;
-  font-family: 'Source Sans Pro', 'Open Sans';
+  display: none;
+  font-family: 'Open Sans';
   font-weight: bold;
   height: 272px;
   line-height: 1.2;
@@ -543,10 +549,12 @@ table {
       display: flex;
       float: left;
       font-size: 0.874em;
+      font-weight: 700;
       height: 50px;
       padding-left: 10px; }
   .cart-hover .cart-footer {
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    font-weight: 700; }
     .cart-hover .cart-footer .cart-price {
       color: #474747;
       display: block;
@@ -559,6 +567,7 @@ table {
       border-radius: 16px;
       background-color: #78cecd;
       color: #fff;
+      cursor: pointer;
       display: block;
       float: right;
       font-size: 0.875em;
@@ -767,14 +776,14 @@ footer {
     margin-right: 25px;
     width: 220px; }
     footer .info .info-title {
-      text-transform: uppercase;
-      height: 17px; }
+      height: 17px;
+      text-transform: uppercase; }
       footer .info .info-title img {
         position: relative;
         top: 2px; }
     footer .info .info-content {
-      padding-top: 30px;
-      line-height: 1.5; }
+      line-height: 1.5;
+      padding-top: 30px; }
   footer .social-medias {
     float: right; }
     footer .social-medias p {
@@ -790,8 +799,8 @@ footer {
       margin-right: 20px; }
     footer .description p {
       float: left;
-      width: 60%;
-      line-height: 1.2; }
+      line-height: 1.2;
+      width: 60%; }
   footer .stamps {
     clear: both;
     padding: 50px 0 20px 0; }
@@ -805,8 +814,8 @@ footer {
         margin-right: 30px; }
     footer .stamps .cards {
       text-align: center;
-      width: 652px;
-      text-align: center; }
+      text-align: center;
+      width: 652px; }
     footer .stamps .group2 {
       float: right; }
       footer .stamps .group2 img {
@@ -815,10 +824,11 @@ footer {
     border-top: 1px solid  #d7d7d7;
     font-size: 0.875em;
     font-weight: 400;
+    margin-bottom: 30px;
     padding-top: 10px; }
     footer .copyright p:first-child {
-      float: left;
-      display: block; }
+      display: block;
+      float: left; }
     footer .copyright p:last-child {
       display: block;
       float: right; }
